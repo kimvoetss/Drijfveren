@@ -1,0 +1,16 @@
+.sidebar {
+    background-image: url("Images/MTB huisstijl iconen SVG/Asset 30.svg");
+    background-repeat: no-repeat;
+    background-position: left -7rem bottom -7rem;
+    background-size: 15rem;
+}
+
+.picture.one > .image_bg{
+    background-image: url("Images/MTB huisstijl iconen SVG/Asset_26-r.svg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 13rem;
+    height: 20rem;
+    position: relative;
+    top: -16px;
+}

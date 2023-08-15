@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" style="font-family: Arial">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Add PrimeFlex + Theme -->
+    <link rel="stylesheet" href="https://unpkg.com/primeflex@^3/primeflex.css">
+    <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/saga-blue.css">
+    <!-- Add Vue.js -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Document</title>
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Images to use -->   
+<div class="grid">
+    <!-- Bar on the left side-->
+    <div class="col-2 shadow-2 p-0 sidebar sidebar_bg">
+    <img class="block w-5 mx-auto my-2" src="Images/MTB.png" alt="" srcset="">
+    <!-- User Profile -->
+    <img class="flex w-12" src="Images/man.avif" alt="" srcset="">
+    <div>
+        <h1 class="block mt-3 ml-4">Johan Bertens</h1>
+        <h2 class="block mt-2 mb-0 ml-4">Pionier</h2>
+        <p class="block mt-1 mb-5 ml-4">pioniers zijn verniewers, steeds innovatief en altijd bezig met frisse ideeen en de dingen op een andere manier te proberen. Ze zijn voortrekkers bij het doorvoeren van veranderingen.</p>
+    </div>
+    <!-- Schooling -->
+    <div class="bg-no-repeat bg-cover text-white" style="background-image: url('Images/MTB huisstijl iconen SVG/Asset 32.svg')">
+        <h2 class="block ml-4 pt-2">Opleiding</h2>
+        <p class="block">
+            <ul class="list-decimal">
+                <li>
+                    Lorem ipsum
+                </li>
+                <li>
+                    Lorem ipsum
+                </li>
+                <li>
+                    Lorem ipsum
+                </li>
+            </ul>
+        </p>
+    <!-- Languages -->
+        <h2 class="block ml-4 pt-2">Talen</h2>
+        <p class="block">
+            <ul class="list-decimal pb-5 mb-0">
+                <li>
+                    Nederlands
+                </li>
+                <li>
+                    Engels
+                </li>
+                <li>
+                    Japans
+                </li>
+            </ul>
+        </p>
+    <!-- Bottom Decorations -->
+    </div>
+    <div class="card flexbox">
+        <div class="picture one ">
+            <div class="image_bg">                
+            </div>
+         </div>
+    </div>        
+</div>
+    <div class="col-6">
+        <div class="flex flex-row pb-2">
+            <img class="w-1" src="Images/MTB huisstijl iconen SVG/Asset 29.svg" alt="" srcset="">
+            <h1 class="ml-auto">Skills-ID</h1>
+        </div>
+    <!--  Drijfveer -->
+    <div class="bg-no-repeat bg-cover text-white pt-5 pb-5" style="background-image: url('Images/MTB huisstijl iconen SVG/Asset 32.svg')">
+        <h1 class="ml-4 my-0">Drijfveer</h1>
+        <h2 class="ml-4 my-1">Ondernemerschap</h2>
+        <p class="ml-4 my-1 w-8">Pioniers zijn verniewers, steeds innovatief en altijd bezig met frisse ideeen en de dingen op een andere manier te proberen. Ze zijn voortrekkers bij het doorvoeren van veranderingen.</p>
+    </div>
+    <div class="pt-5 pb-5 compoment-search">
+        <template class="result-template">
+            <h2>country: {{country}}</h2>
+            <h2>lat: {{lat}}</h2>
+            <h2>localtime: {{localtime}}</h2>
+            <h2>lon: {{lon}}</h2>
+            <h2>name: {{name}}</h2>
+            <h2>region: {{region}}</h2>
+            <h2>tz_id: {{tz_id}}</h2>
+        </template>
+        <div class="result-container"> </div>
+        <form>
+            <input class="result-input" type="text">
+            <button class="result-button" type="button">click</button>
+        </form>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
